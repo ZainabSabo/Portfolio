@@ -170,6 +170,9 @@ ul li {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
+.contact{
+  width: 90%;
+}
 .contact-container {
   max-width: 600px;
   margin: 50px auto;
@@ -178,6 +181,7 @@ ul li {
   border-radius: 12px;
   box-shadow: 0 6px 18px rgba(0,0,0,0.08);
   text-align: left;
+  height: 1000px;
 }
 
 .contact-form form {
@@ -295,3 +299,38 @@ ul li {
 }
 
 
+
+
+
+/* --- GRID LAYOUT --- */
+.grid-layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  padding: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Each box styling */
+.grid-layout section {
+  background: #f9f9f9;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.grid-layout section:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .grid-layout {
+    grid-template-columns: 1fr;
+  }
+}
