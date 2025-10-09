@@ -298,11 +298,6 @@ ul li {
   background: gray;
 }
 
-
-
-
-
-/* --- GRID LAYOUT --- */
 .grid-layout {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -313,7 +308,6 @@ ul li {
   margin: 0 auto;
 }
 
-/* Each box styling */
 .grid-layout section {
   background: #f9f9f9;
   border-radius: 15px;
@@ -322,15 +316,23 @@ ul li {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Hover effect */
 .grid-layout section:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
-/* Make it responsive */
 @media (max-width: 768px) {
   .grid-layout {
     grid-template-columns: 1fr;
   }
+  .card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
+
+}
+
+
