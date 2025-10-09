@@ -129,6 +129,12 @@ ul li {
   margin-top: 20px;
 }
 
+@media (max-width: 768px) {
+  .projects {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project {
   background: #ffffff;
   padding: 20px;
@@ -327,26 +333,9 @@ ul li {
   }
 }
 
-.projects {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px; 
-}
 
 
-@media (max-width: 360px) {
-  .projects {
-    grid-template-columns: 1fr; 
-  }
-}
 
-.project {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 8px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
 
 
 
